@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Expo
+.expo/
+dist/
+*.jks
+*.p8
+*.p12
+*.key
+credentials.json
+
+# Build artifacts
+*.apk
+*.aab
+*.ipa
+development-build/
+
+# OS-specific
+.DS_Store
+Thumbs.db

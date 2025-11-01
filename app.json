@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "mi-primera-react-native-app",
+    "slug": "mi-primera-react-native-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "La app necesita acceso a tu cámara para que puedas tomar una foto.",
+        "NSPhotoLibraryUsageDescription": "La app necesita acceso a tus fotos para que puedas seleccionar una."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.miprimerareactnativeapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app necesita acceso a tus fotos para que puedas seleccionar una.",
+          "cameraPermission": "La app necesita acceso a tu cámara para que puedas tomar una foto."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "54b020b9-f8d8-4dae-87c2-09c228674e4c"
+      }
+    }
+  }
+}
